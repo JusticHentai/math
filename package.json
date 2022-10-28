@@ -2,6 +2,10 @@
   "name": "@justichentai/math",
   "version": "1.0.0",
   "description": "工具包模板",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JusticHentai/math"
+  },
   "license": "ISC",
   "author": "justichentai",
   "type": "module",
@@ -9,8 +13,8 @@
   "typings": "dist/utils.d.ts",
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "test": "jest",
-    "prepublish": "pnpm build"
+    "prepublish": "pnpm build",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
@@ -31,9 +35,5 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.31.2",
     "typescript": "^4.8.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/JusticHentai/math"
   }
 }
