@@ -1,3 +1,21 @@
-import Utils from './src'
+import Axis2D from './src/axis/Axis2D'
+import getDistance from './src/axis/getDistance'
+import getPosition from './src/axis/getPosition'
+import Point from './src/axis/Point'
+import getLocalTime from './src/time/getLocalTime'
+import Time, { TimeDifference } from './src/time/Time'
+import timeTransform, {
+  TimeResult as TimeTransformResult,
+} from './src/time/timeTransform'
 
-export { Utils as default }
+export {
+  Axis2D,
+  getDistance,
+  getPosition,
+  Point,
+  Time,
+  TimeDifference,
+  timeTransform,
+  TimeTransformResult,
+  getLocalTime,
+}
