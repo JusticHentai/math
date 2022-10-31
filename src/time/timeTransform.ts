@@ -12,7 +12,7 @@ export interface TimeResult {
 }
 
 /**
- * 转化时间
+ * 格式化时间
  * @param time 时间戳
  */
 export default function timeTransform(time: number): TimeResult {
