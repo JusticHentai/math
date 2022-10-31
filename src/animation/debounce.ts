@@ -8,8 +8,11 @@ export interface Options {
 
 /**
  * 防抖
- * duration 内反复执行一直加时间 直到执行结束
- * duration 外执行 则会立即执行 or 延迟 duration 后执行
+ * immediate false 时
+ * duration 内执行 加时间
+ * duration 内没有执行 则执行一遍 cb
+ * immediate true 时
+ *  先执行一次 cb duration 内执行加时间
  */
 export default function debounce(options: Options) {
   const { cb, duration, immediate } = options

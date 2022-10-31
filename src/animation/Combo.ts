@@ -1,5 +1,4 @@
 export interface Options {
-  onStart?: (times?: number) => void // 开始时触发
   onCombo?: (times?: number) => void // 每次连击时触发
   onComplete?: (times?: number) => void // 结束时触发
   duration: number // 间隔时长
