@@ -4,6 +4,6 @@
  * @max 随机终点
  * @returns 随机数
  */
-export function random(min: number, max: number) {
+export default function random(min: number, max: number) {
   return Math.floor(Math.random() * (max - min)) + min
 }
