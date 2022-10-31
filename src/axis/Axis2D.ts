@@ -4,8 +4,9 @@ import Point from './Point'
 type ContentList<T> = Record<string | number, Record<string | number, T>>
 
 /**
- * 2d坐标轴 用来存放信息
- * T 代表存放信息的类型
+ * 2d坐标轴
+ * 每个坐标都能用来存放信息
+ * 接收范型 T 代表存放信息的类型
  */
 export default class Axis2D<T> {
   constructor() {}

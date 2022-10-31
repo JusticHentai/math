@@ -1,5 +1,8 @@
 import Point from './Point'
 
+/**
+ * 获取两点间的距离
+ */
 export default function getDistance(start: Point, end: Point): number {
   const x = end['x'] - start['x']
   const y = end['y'] - start['y']
