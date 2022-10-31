@@ -1,7 +1,7 @@
 {
   "name": "@justichentai/math",
   "version": "1.0.0",
-  "description": "工具包模板",
+  "description": "数学相关工具包",
   "repository": {
     "type": "git",
     "url": "https://github.com/JusticHentai/math"
@@ -21,7 +21,7 @@
     "@babel/plugin-transform-runtime": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
     "@babel/runtime": "^7.18.9",
-    "@justichentai/types-utils": "workspace:^1.0.0",
+    "@justichentai/types-utils": "workspace:*",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
