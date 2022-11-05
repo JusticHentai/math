@@ -1,3 +1,5 @@
+import binarySearch from './src/algorithms/binarySearch'
+import random from './src/algorithms/random'
 import Combo from './src/animation/Combo'
 import debounce from './src/animation/debounce'
 import throttle from './src/animation/throttle'
@@ -5,7 +7,6 @@ import Axis2D from './src/axis/Axis2D'
 import getDistance from './src/axis/getDistance'
 import getPosition from './src/axis/getPosition'
 import Point from './src/axis/Point'
-import random from './src/random'
 import getLocalTime from './src/time/getLocalTime'
 import Time, { TimeDifference } from './src/time/Time'
 import timeTransform, {
@@ -26,4 +27,5 @@ export {
   Combo,
   debounce,
   throttle,
+  binarySearch,
 }
