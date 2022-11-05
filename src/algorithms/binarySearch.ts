@@ -1,17 +1,16 @@
+/**
+ * 长度
+ * 外部判断；1 代表目标小于中间； 2代表目标大于中间；3代表找到了
+ */
 export interface Options {
-  length: number // 长度
-  getContent: (index: number) => number // 获取内容
-  target: number // 获取目标
+  length: number
+  cb: (midIndex: number) => 1 | 2 | 3
 }
 
 /**
  * 二分法
  */
-export default function binarySearch({
-  length,
-  getContent,
-  target,
-}: Options): number {
+export default function binarySearch({ length, cb }: Options): number {
   if (length <= 0) return -1
 
   let lowIndex = 0
@@ -20,11 +19,11 @@ export default function binarySearch({
   while (lowIndex <= highIndex) {
     const midIndex = Math.floor((lowIndex + highIndex) / 2)
 
-    const midContent = getContent(midIndex)
+    const res = cb(midIndex)
 
-    if (target < midContent) {
+    if (res === 1) {
       highIndex = midIndex - 1
-    } else if (target > midContent) {
+    } else if (res === 2) {
       lowIndex = midIndex + 1
     } else {
       return midIndex
