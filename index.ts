@@ -1,4 +1,5 @@
 import binarySearch from './src/algorithms/binarySearch'
+import pick from './src/algorithms/pick'
 import random from './src/algorithms/random'
 import Combo from './src/animation/Combo'
 import debounce from './src/animation/debounce'
@@ -28,4 +29,5 @@ export {
   debounce,
   throttle,
   binarySearch,
+  pick,
 }
