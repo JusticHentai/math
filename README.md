@@ -49,6 +49,25 @@ interface Options {
 function binarySearch(options: Options): number
 ```
 
+#### Omit
+
+删除 对象中 指定的 key
+
+```ts
+import { omit } from '@justichentai/math'
+
+const newObj = omit(obj, keys)
+```
+
+类型：
+
+```ts
+function omit<T extends object, K extends keyof T>(  
+  obj: T,  
+  keys: Array<K | string>  
+): Omit<T, K>
+```
+
 #### Pick
 
 提取 obj 内的 key 组成一个新的 obj
