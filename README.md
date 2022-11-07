@@ -16,6 +16,74 @@ import { xxx } from '@justichentai/math'
 
 ## 详细 Api
 
+### Algorithms
+
+算法相关
+
+#### binarySearch
+
+二分查找
+- -1 表示没找到 其他则是找到的值
+- cb
+  - 返回 1 代表 target 小于 mid 应该往小的区间找
+  - 返回 2 代表 target 大于 mid 应该往大的区间找
+  - 返回 3 代表找到了
+
+```ts
+import { binarySearch } from '@justichentai/math'
+
+const res = binarySearch({
+  length: x,
+  cb: x
+})
+```
+
+类型：
+
+```ts
+interface Options {  
+  length: number  
+  cb: (midIndex: number) => 1 | 2 | 3  
+}
+
+function binarySearch(options: Options): number
+```
+
+#### Pick
+
+提取 obj 内的 key 组成一个新的 obj
+
+```ts
+import { pick } from '@justichentai/math'
+
+const newObj = pick(obj, keys)
+```
+
+类型：
+
+```ts
+function pick<T extends Record<string, any>, K extends keyof T>(  
+  obj: T,  
+  keys: Array<K | string>  
+): Pick<T, K> {
+```
+
+#### Random
+
+随机数
+
+使用：
+```ts
+import { random } from '@justichentai/math'
+
+const n = random(1, 110)
+```
+
+类型：
+```ts
+function random(min: number, max: number): number
+```
+
 ### Animation
 
 动画相关
@@ -280,20 +348,4 @@ interface TimeResult {
 }
 
 function timeTransform(time: number): TimeResult
-```
-
-### Random
-
-随机数
-
-使用：
-```ts
-import { random } from '@justichentai/math'
-
-const n = random(1, 110)
-```
-
-类型：
-```ts
-function random(min: number, max: number): number
 ```
