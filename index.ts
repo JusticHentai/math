@@ -4,6 +4,7 @@ import random from './src/algorithms/random'
 import Combo from './src/animation/Combo'
 import debounce from './src/animation/debounce'
 import throttle from './src/animation/throttle'
+import throttleByRaf from './src/animation/throttleByRaf'
 import Axis2D from './src/axis/Axis2D'
 import getDistance from './src/axis/getDistance'
 import getPosition from './src/axis/getPosition'
@@ -30,4 +31,5 @@ export {
   throttle,
   binarySearch,
   pick,
+  throttleByRaf,
 }

@@ -181,6 +181,27 @@ export interface Options {
 }
 ```
 
+#### throttleByRaf
+
+保证同一帧内节流
+
+使用：
+
+```ts
+import { throttleByRaf } from '@justichentai/math'
+
+const myFunction = throttleByRaf(()=>{})
+
+// 执行
+myFunction()
+```
+
+类型：
+
+```ts
+function throttleByRaf(cb: MyFunction): MyFunction
+```
+
 #### Axis
 
 轴坐标运算相关

@@ -1,7 +1,9 @@
+import { MyFunction } from '@justichentai/types-utils'
+
 /**
  *  保证同一帧内节流
  */
-export default function throttleByRaf(cb: (...params: any[]) => any) {
+export default function throttleByRaf(cb: MyFunction): MyFunction {
   let timer: number | null = null
 
   const throttle = (...params: any[]) => {
