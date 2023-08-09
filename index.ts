@@ -9,6 +9,7 @@ import Axis2D from './src/axis/Axis2D'
 import getDistance from './src/axis/getDistance'
 import getPosition from './src/axis/getPosition'
 import Point from './src/axis/Point'
+import deepMerge from './src/object/deepMerge'
 import getLocalTime from './src/time/getLocalTime'
 import Time, { TimeDifference } from './src/time/Time'
 import timeTransform, {
@@ -32,4 +33,5 @@ export {
   binarySearch,
   pick,
   throttleByRaf,
+  deepMerge,
 }
