@@ -1,7 +1,7 @@
-import { MyFunction } from '@justichentai/types-utils'
+import { IFunction } from '@justichentai/types-utils'
 
 export interface Options {
-  cb: MyFunction // 函数本体
+  cb: IFunction // 函数本体
   duration: number // 间隔时长
   immediate?: boolean // 是否立即执行
 }
