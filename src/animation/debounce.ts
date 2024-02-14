@@ -33,6 +33,7 @@ export default function debounce(options: Options) {
     } else {
       timeout = setTimeout(() => {
         cb(...params)
+        timeout = null
       }, duration)
     }
   }
