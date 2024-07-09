@@ -36,6 +36,7 @@ export default function throttle(options: Options) {
     } else {
       timeout = setTimeout(() => {
         cb(...params)
+        timeout = null
       }, duration)
     }
   }
